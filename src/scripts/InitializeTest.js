@@ -151,17 +151,17 @@ const showTestResults = () => {
           <h2 class="results-title">${resultText}</h2>
           <a class="social-links" href="#!">
             <span class="facebook-link">
-              <img src="https://toopeachok.github.io/VcRuTest/docs/images/social-links-images/facebook-logo.svg" alt="">
+              <img src="https://github.com/toopeachok/VcRuTest/tree/master/docs/images/social-links-images/facebook-logo.svg" alt="">
             </span>
           </a>
           <a class="social-links" href="#!">
             <span class="vk-link">
-              <img src="https://toopeachok.github.io/VcRuTest/docs/images/social-links-images/vk-social-logotype.svg" alt="">
+              <img src="https://github.com/toopeachok/VcRuTest/tree/master/docs/images/social-links-images/vk-social-logotype.svg" alt="">
             </span>
           </a>
           <a class="social-links" href="#!">
             <span class="twitter-link">
-              <img src="https://toopeachok.github.io/VcRuTest/docs/images/social-links-images/twitter-logo-silhouette.svg" alt="">
+              <img src="https://github.com/toopeachok/VcRuTest/tree/master/docs/images/social-links-images/twitter-logo-silhouette.svg" alt="">
             </span>
           </a>
           <button class="start-test-again-btn" id="start-test-btn">Пройти еще раз</button>
