@@ -77,14 +77,6 @@ module.exports = {
         filename: filename('css'),
       }
     ),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: path.resolve(__dirname, "src/images/social-links-images"), to: path.resolve(__dirname, "docs/images/social-links-images") },
-      ],
-      options: {
-        concurrency: 100,
-      },
-    })
   ],
   module: {
     rules: [

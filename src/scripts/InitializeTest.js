@@ -1,5 +1,7 @@
 import questions from "@/scripts/QuestionsData";
-
+const vkLogoUrl = require('@/images/social-links-images/vk-social-logotype.svg')
+const facebookLogoUrl = require('@/images/social-links-images/facebook-logo.svg')
+const twitterLogoUrl = require('@/images/social-links-images/twitter-logo-silhouette.svg')
 
 const getQuestionHTML = i => {
 
@@ -151,17 +153,17 @@ const showTestResults = () => {
           <h2 class="results-title">${resultText}</h2>
           <a class="social-links" href="#!">
             <span class="facebook-link">
-              <img src="https://github.com/toopeachok/VcRuTest/tree/master/docs/images/social-links-images/facebook-logo.svg" alt="">
+              <img src="${facebookLogoUrl.default}" alt="">
             </span>
           </a>
           <a class="social-links" href="#!">
             <span class="vk-link">
-              <img src="https://github.com/toopeachok/VcRuTest/tree/master/docs/images/social-links-images/vk-social-logotype.svg" alt="">
+              <img src="${vkLogoUrl.default}" alt="">
             </span>
           </a>
           <a class="social-links" href="#!">
             <span class="twitter-link">
-              <img src="https://github.com/toopeachok/VcRuTest/tree/master/docs/images/social-links-images/twitter-logo-silhouette.svg" alt="">
+              <img src="${twitterLogoUrl.default}" alt="">
             </span>
           </a>
           <button class="start-test-again-btn" id="start-test-btn">Пройти еще раз</button>
