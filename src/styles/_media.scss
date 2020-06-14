@@ -49,6 +49,15 @@
 
 }
 
+@media (max-width: 1099px) and (orientation: landscape) {
+
+  //
+  .page-wrapper {
+    display: block;
+  }
+
+}
+
 @media (max-width: 655px) {
 
   //
@@ -61,19 +70,19 @@
     max-width: 322px;
   }
 
-
-}
-
-@media (max-width: 391px) {
-
   //answer result page
   .answer-result-page {
     position: static;
+  }
+
+  .answer-text {
+    margin-bottom: 100px;
   }
 
   .next-question-btn {
     position: static;
     margin-bottom: 10px;
   }
+
 
 }
