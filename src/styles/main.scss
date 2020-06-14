@@ -24,6 +24,7 @@ html {
 
 body {
   background: $body-bg-color;
+  height: 100vh;
 }
 
 image {
@@ -32,6 +33,7 @@ image {
 
 .container {
   max-width: 1060px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -54,11 +56,17 @@ image {
   -moz-appearance: none;
 }
 
+//
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
 //test-root
 .test-root {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 100%;
   min-height: 536px;
 }
 
@@ -67,8 +75,8 @@ image {
   min-height: inherit;
   box-shadow: 0 30px 40px rgba(133, 73, 86, 0.210598), 0 0 4px rgba(0, 0, 0, 0.0942595);
   background: url("../images/noncontent-images/test-startpage-bg.png") no-repeat bottom right,
-  url("../images/noncontent-images/Bitmap.png") repeat center;
-  padding: 108px 0 41px 52px;
+  center / cover url("../images/noncontent-images/Bitmap.png") no-repeat;
+  padding: 108px 52px 41px;
   flex-direction: column;
 
   position: relative;
@@ -121,6 +129,7 @@ image {
 .question-page {
   min-height: inherit;
   background: url("../images/noncontent-images/Bitmap.png") repeat center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   padding-top: 27px;
@@ -147,17 +156,20 @@ image {
 .answer-btn {
   display: block;
   margin-bottom: 9px;
+  text-align: left;
 }
 
 //answer result page
 .answer-result-page {
   position: relative;
+  padding-bottom: 70px;
 }
 
 .answer-text {
   max-width: 472px;
   font-size: 16px;
   line-height: 23px;
+  margin-bottom: 20px;
 }
 
 .correct-answer-btn, .incorrect-answer-btn {
@@ -193,7 +205,7 @@ image {
   background: url("../images/noncontent-images/right-arrow.svg") no-repeat right;
   cursor: pointer;
   position: absolute;
-  bottom: 50px;
+  bottom: 47px;
 }
 
 //test result page
@@ -201,7 +213,7 @@ image {
   min-height: inherit;
   display: flex;
   justify-content: center;
-  padding-top: 27px;
+  padding: 28px 40px 70px;
   position: relative;
 }
 
@@ -285,3 +297,5 @@ image {
   background: url("../images/noncontent-images/refresh-arrow.svg") no-repeat right;
   cursor: pointer;
 }
+
+@import "media";

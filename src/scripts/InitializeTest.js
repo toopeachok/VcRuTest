@@ -149,7 +149,7 @@ const showTestResults = () => {
   $root.innerHTML = `
       <div class="test-results-page results-${imgNumber}">
         <div class="test-results-page__content">
-          <p class="correct-answers-count">${correctAnswersCount} из правильных ${questions.length} ответов</p>
+          <p class="correct-answers-count">${correctAnswersCount} из ${questions.length} правильных ответов</p>
           <h2 class="results-title">${resultText}</h2>
           <a class="social-links" href="#!">
             <span class="facebook-link">
